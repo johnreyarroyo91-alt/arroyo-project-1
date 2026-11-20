@@ -4,135 +4,362 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Personal Portfolio</title>
+
+    <title>My Personal Portfolio | John Rey</title>
 
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
 
-    <!-- Navigation -->
+    <!-- NAVIGATION -->
     <header>
         <nav class="navbar">
-            <a href="#" class="logo">MY<span>PORTFOLIO.</span></a>
+            <a href="#home" class="logo">
+                MY<span>PORTFOLIO.</span>
+            </a>
 
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#learning">Learning</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Home Section -->
+    <!-- HOME -->
     <section class="home" id="home">
 
         <div class="home-content">
-            <p class="intro">HELLO, WELCOME TO MY PORTFOLIO</p>
 
-            <h1>I'm <span>Your Name</span></h1>
+            <p class="intro">WELCOME TO MY PERSONAL PORTFOLIO</p>
+
+            <div class="availability">
+                <span class="status-dot"></span>
+                IT STUDENT | ALWAYS LEARNING
+            </div>
+
+            <h1>I'm <span>John Rey</span></h1>
 
             <h2>IT Student & Future Developer</h2>
 
             <p class="description">
-                I am a passionate student interested in technology,
-                programming, and web development. I enjoy learning
-                new skills and creating innovative digital experiences.
+                I am passionate about technology, programming,
+                and web development. I enjoy exploring new ideas,
+                developing my skills, and creating digital experiences.
             </p>
 
-            <a href="#about" class="btn">Explore More</a>
+            <div class="home-buttons">
+                <a href="#projects" class="btn">View My Projects</a>
+                <a href="#contact" class="outline-btn">Contact Me</a>
+            </div>
+
+            <div class="home-socials">
+                <a href="#contact">EMAIL</a>
+                <a href="#projects">MY WORK</a>
+                <a href="#about">ABOUT ME</a>
+            </div>
+
         </div>
 
         <div class="profile-container">
             <div class="profile-card">
-                <img src="assets/profile.svg" alt="My Profile">
-                <h3>Your Name</h3>
+
+                <div class="profile-label">MY PROFILE</div>
+
+                <img src="assets/profile.jpg" alt="John Rey's profile">
+
+                <h3>John Rey</h3>
                 <p>Future Web Developer</p>
+
+                <div class="profile-line"></div>
+
+                <span class="profile-caption">
+                    Building skills, one project at a time.
+                </span>
+
             </div>
         </div>
 
     </section>
 
-    <!-- About Section -->
+    <!-- ABOUT -->
     <section class="about section" id="about">
 
-        <h2 class="section-title">About <span>Me</span></h2>
+        <h2 class="section-title">
+            About <span>Me</span>
+        </h2>
 
-        <div class="about-box">
-            <p>
-                Hello! My name is Your Name. I am an Information
-                Technology student who is passionate about computers,
-                programming, and modern technology.
+        <div class="about-layout">
 
-                My goal is to improve my programming skills and
-                become a successful developer in the future.
-                I believe that every project is an opportunity
-                to learn something new.
-            </p>
+            <div class="about-box">
+                <span class="small-heading">GET TO KNOW ME</span>
+
+                <h3>A little introduction about myself.</h3>
+
+                <p>
+                    Hello! My name is John Rey. I am an Information
+                    Technology student who is passionate about computers,
+                    programming, and modern technology.
+
+                    My goal is to improve my programming skills and
+                    become a successful developer in the future.
+                    I believe that every project is an opportunity
+                    to learn something new.
+                </p>
+
+                <a href="#skills" class="text-link">
+                    Explore My Skills →
+                </a>
+            </div>
+
+            <div class="about-details">
+
+                <div class="detail-card">
+                    <span>01</span>
+                    <h3>Creative Thinking</h3>
+                    <p>Exploring ideas and finding new ways to solve problems.</p>
+                </div>
+
+                <div class="detail-card">
+                    <span>02</span>
+                    <h3>Continuous Learning</h3>
+                    <p>Improving my knowledge through practice and experience.</p>
+                </div>
+
+                <div class="detail-card">
+                    <span>03</span>
+                    <h3>Technology</h3>
+                    <p>Discovering tools and technologies that inspire me.</p>
+                </div>
+
+            </div>
         </div>
 
     </section>
 
-    <!-- Skills Section -->
+    <!-- HOBBIES -->
+    <section class="hobbies section" id="hobbies">
+
+        <h2 class="section-title">
+            My <span>Hobbies</span>
+        </h2>
+
+        <p class="section-description">
+            Things I enjoy doing in my free time.
+        </p>
+
+        <div class="hobbies-container">
+
+            <div class="hobby-card">
+                <div class="hobby-icon">🎮</div>
+                <h3>Gaming</h3>
+                <p>I enjoy playing online games during my free time.</p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">💻</div>
+                <h3>Coding</h3>
+                <p>I enjoy learning programming and creating websites.</p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">🎵</div>
+                <h3>Music</h3>
+                <p>I love listening to music to relax and enjoy my day.</p>
+            </div>
+
+            <div class="hobby-card">
+                <div class="hobby-icon">📱</div>
+                <h3>Technology</h3>
+                <p>I enjoy discovering new gadgets, apps, and technology.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- SKILLS -->
     <section class="skills section" id="skills">
 
-        <h2 class="section-title">My <span>Skills</span></h2>
+        <h2 class="section-title">
+            My <span>Skills</span>
+        </h2>
+
+        <p class="section-description">
+            Technologies and tools I am learning and practicing.
+        </p>
 
         <div class="skills-container">
 
             <div class="skill-card">
+                <div class="skill-icon">&lt;/&gt;</div>
                 <h3>HTML</h3>
-                <p>Creating the structure of websites.</p>
+                <p>Web structure</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%;"></div>
+                </div>
             </div>
 
             <div class="skill-card">
+                <div class="skill-icon">{ }</div>
                 <h3>CSS</h3>
-                <p>Designing beautiful and responsive websites.</p>
+                <p>Web styling</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 85%;"></div>
+                </div>
             </div>
 
             <div class="skill-card">
-                <h3>PHP</h3>
-                <p>Learning backend web development.</p>
+                <div class="skill-icon">JS</div>
+                <h3>JavaScript</h3>
+                <p>Web interactivity</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
             </div>
 
             <div class="skill-card">
-                <h3>Computer Skills</h3>
-                <p>Basic computer troubleshooting and operations.</p>
+                <div class="skill-icon">C++</div>
+                <h3>C++</h3>
+                <p>Programming</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">AP</div>
+                <h3>Adobe Photoshop</h3>
+                <p>Graphic designing</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="skill-card">
+                <div class="skill-icon">Git</div>
+                <h3>Git and GitHub</h3>
+                <p>Version control</p>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 65%;"></div>
+                </div>
             </div>
 
         </div>
 
     </section>
 
-    <!-- Projects Section -->
+    <!-- PROJECTS -->
     <section class="projects section" id="projects">
 
-        <h2 class="section-title">My <span>Projects</span></h2>
+        <h2 class="section-title">
+            My <span>Projects</span>
+        </h2>
+
+        <p class="section-description">
+            Some of the projects I have worked on as an IT student.
+        </p>
 
         <div class="projects-container">
 
             <div class="project-card">
+                <span class="project-number">PROJECT 01</span>
+                <div class="project-symbol">🌐</div>
+
                 <h3>Personal Portfolio</h3>
+
                 <p>
                     A personal website that showcases my background,
                     skills, and projects using HTML and CSS.
                 </p>
+
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                </div>
             </div>
 
             <div class="project-card">
+                <span class="project-number">PROJECT 02</span>
+                <div class="project-symbol">🏀</div>
+
                 <h3>Sports Inventory System</h3>
+
                 <p>
                     A system designed to manage and monitor
                     sports equipment borrowing records.
                 </p>
+
+                <div class="project-tags">
+                    <span>PHP</span>
+                    <span>OOP</span>
+                    <span>JSON</span>
+                </div>
             </div>
 
             <div class="project-card">
+                <span class="project-number">PROJECT 03</span>
+                <div class="project-symbol">🖥️</div>
+
                 <h3>Laboratory Monitoring System</h3>
+
                 <p>
                     A project that records laboratory users,
                     entry times, and computer usage.
+                </p>
+
+                <div class="project-tags">
+                    <span>PHP</span>
+                    <span>OOP</span>
+                    <span>System Design</span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- WHAT I'M LEARNING -->
+    <section class="learning section" id="learning">
+
+        <h2 class="section-title">
+            What I'm <span>Learning</span>
+        </h2>
+
+        <p class="section-description">
+            My journey toward becoming a better developer.
+        </p>
+
+        <div class="learning-container">
+
+            <div class="learning-card">
+                <div class="learning-icon">⚡</div>
+                <h3>Web Development</h3>
+                <p>
+                    Learning how to build responsive and interactive
+                    websites using modern web technologies.
+                </p>
+            </div>
+
+            <div class="learning-card">
+                <div class="learning-icon">⌨️</div>
+                <h3>Programming</h3>
+                <p>
+                    Improving my coding logic, problem-solving,
+                    and programming fundamentals.
+                </p>
+            </div>
+
+            <div class="learning-card">
+                <div class="learning-icon">🚀</div>
+                <h3>New Technologies</h3>
+                <p>
+                    Exploring new tools and technologies
+                    to expand my knowledge.
                 </p>
             </div>
 
@@ -140,30 +367,75 @@
 
     </section>
 
-    <!-- Contact Section -->
-    <section class="contact section" id="contact">
+    <!-- CONTACT -->
+    
+<section class="contact section" id="contact">
+    
+    <h2 class="section-title">Contact <span>Me</span></h2>
 
-        <h2 class="section-title">Contact <span>Me</span></h2>
+    <div class="contact-card">
+        <h3>Get In Touch</h3>
+        <p>Thank you for visiting my personal portfolio!</p>
 
-        <div class="contact-box">
-            <p>Interested in connecting with me?</p>
+        <p>Email: johnreyarroyo91@email.com</p>
+        <p>Location: Philippines</p>
 
-            <p>Email: yourname@email.com</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/john.rey.514479"
+               target="_blank" rel="noopener noreferrer"
+               class="social-btn">
+                <span>f</span> Facebook
+            </a>
 
-            <p>Location: Philippines</p>
-
-            <a href="mailto:yourname@email.com" class="btn">
-                Send Me an Email
+            <a href="https://www.instagram.com/johnnyryyy/"
+               target="_blank" rel="noopener noreferrer"
+               class="social-btn">
+                <span>◎</span> Instagram
             </a>
         </div>
+    </div>
+</section>
 
-    </section>
 
-    <!-- Footer -->
+    <!-- FOOTER -->
     <footer>
-        <p>© 2026 Your Name | Personal Portfolio</p>
-        <p>Designed with HTML and CSS.</p>
+        <a href="#home" class="footer-logo">MY<span>PORTFOLIO.</span></a>
+
+        <p>© <span id="current-year">2026</span> John Rey | Personal Portfolio</p>
+        <p>Designed with HTML, CSS, and JavaScript.</p>
+
+        <a href="#home" class="back-top">Back to Top ↑</a>
     </footer>
+
+    <script>
+        // Update the footer year automatically
+        document.getElementById("current-year").textContent =
+            new Date().getFullYear();
+
+        // Scroll reveal animation
+        const revealElements = document.querySelectorAll(
+            ".section-title, .section-description, .about-box, " +
+            ".detail-card, .hobby-card, .skill-card, .project-card, " +
+            ".learning-card, .contact-card, .contact-subtitle, .contact-btn"
+        );
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("active");
+                } else {
+                    entry.target.classList.remove("active");
+                }
+            });
+        }, {
+            threshold: 0.15
+        });
+
+        revealElements.forEach((element) => {
+            element.classList.add("reveal");
+            observer.observe(element);
+        });
+    </script>
 
 </body>
 </html>
