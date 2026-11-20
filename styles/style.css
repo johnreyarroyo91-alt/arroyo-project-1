@@ -2414,3 +2414,163 @@ section {
         transform: none;
     }
 }
+
+
+/* =========================
+   LUXURY BACKGROUND GRADIENTS
+========================= */
+
+/* Main website background */
+body {
+    background:
+        radial-gradient(
+            ellipse at 15% 10%,
+            rgba(212, 175, 55, 0.10),
+            transparent 35%
+        ),
+        radial-gradient(
+            ellipse at 85% 45%,
+            rgba(184, 134, 11, 0.07),
+            transparent 40%
+        ),
+        linear-gradient(
+            135deg,
+            #080808,
+            #11100c 50%,
+            #080808
+        );
+    background-attachment: fixed;
+}
+
+/* Homepage background */
+.home {
+    background:
+        radial-gradient(
+            circle at 80% 30%,
+            rgba(212, 175, 55, 0.13),
+            transparent 35%
+        ),
+        linear-gradient(
+            120deg,
+            #080808,
+            #17140c,
+            #080808
+        );
+    position: relative;
+    isolation: isolate;
+}
+
+/* Section background glow */
+section {
+    position: relative;
+    isolation: isolate;
+}
+
+section:nth-of-type(even) {
+    background:
+        radial-gradient(
+            ellipse at 10% 50%,
+            rgba(212, 175, 55, 0.06),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(20, 18, 12, 0.7),
+            rgba(8, 8, 8, 0.9)
+        );
+}
+
+/* Gold gradient headings */
+section h2,
+.home h1 {
+    background: linear-gradient(
+        90deg,
+        #b8860b,
+        #fff0b5,
+        #d4af37
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Gradient hobby cards */
+.hobby-card {
+    background: linear-gradient(
+        145deg,
+        #211d12,
+        #11100c 55%,
+        #090909
+    );
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Gradient skill cards */
+.skill-card {
+    background: linear-gradient(
+        145deg,
+        #1b1810,
+        #10100d 60%,
+        #080808
+    );
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Gradient project cards */
+.project-card {
+    background: linear-gradient(
+        135deg,
+        #211d12,
+        #12110d 55%,
+        #090909
+    );
+    border: 1px solid rgba(212, 175, 55, 0.3);
+}
+
+/* Gold gradient buttons */
+.primary-btn {
+    background: linear-gradient(
+        135deg,
+        #f5df91,
+        #d4af37,
+        #a77b16
+    );
+    color: #080808;
+}
+
+/* Gradient contact section */
+.contact {
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(212, 175, 55, 0.12),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #11100c,
+            #080808
+        );
+}
+
+/* Gradient footer */
+.site-footer {
+    background:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(212, 175, 55, 0.12),
+            transparent 55%
+        ),
+        linear-gradient(
+            135deg,
+            #17140c,
+            #080808 65%
+        );
+}
+
+/* Keep mobile scrolling smooth */
+@media (max-width: 768px) {
+    body {
+        background-attachment: scroll;
+    }
+}
