@@ -24,6 +24,7 @@ body {
 
 /* ===== NAVIGATION ===== */
 
+
 header {
     position: fixed;
     top: 0;
@@ -2224,5 +2225,192 @@ section {
     *::after {
         animation-duration: 0.01ms !important;
         transition-duration: 0.01ms !important;
+    }
+}
+
+/* NAVIGATION HOVER */
+.nav-links a {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -7px;
+    width: 0;
+    height: 2px;
+    background: #d4af37;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #e4c76d;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+/* BUTTON HOVER */
+.btn {
+    position: relative;
+    overflow: hidden;
+    transition: 0.35s ease;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(212, 175, 55, 0.3);
+}
+
+.btn:active {
+    transform: translateY(-1px) scale(0.98);
+}
+/* HOBBY CARD HOVER */
+.hobby-card {
+    transform-style: preserve-3d;
+    transition: transform 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.hobby-card:hover {
+    transform: translateY(-12px) rotateX(5deg) rotateY(-3deg);
+    border-color: #d4af37;
+    box-shadow:
+        0 15px 35px rgba(212, 175, 55, 0.15),
+        0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+.hobby-icon {
+    transition: transform 0.4s ease;
+}
+
+.hobby-card:hover .hobby-icon {
+    transform: translateY(-5px) scale(1.12);
+}
+/* SKILLS HOVER */
+.skill-card {
+    transition: 0.4s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    border-color: #f5df91;
+    box-shadow: 0 15px 35px rgba(212, 175, 55, 0.2);
+}
+
+.skill-progress {
+    transition: filter 0.4s ease;
+}
+
+.skill-card:hover .skill-progress {
+    filter: brightness(1.4);
+}
+
+/* PROJECT HOVER */
+.project-card {
+    transition: transform 0.4s ease,
+                border-color 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-12px) rotateX(4deg);
+    border-color: #e4c76d;
+    box-shadow:
+        0 20px 40px rgba(212, 175, 55, 0.15),
+        inset 0 0 20px rgba(212, 175, 55, 0.04);
+}
+
+.project-symbol {
+    transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-symbol {
+    transform: rotate(10deg) scale(1.12);
+}
+
+/* PROFILE IMAGE HOVER */
+.profile-image {
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+}
+
+.profile-image img {
+    transition: transform 0.5s ease;
+}
+
+.profile-card:hover .profile-image {
+    transform: scale(1.05);
+    box-shadow:
+        0 0 20px #d4af37,
+        0 0 45px rgba(212, 175, 55, 0.35);
+}
+
+.profile-card:hover .profile-image img {
+    transform: scale(1.08);
+}
+
+/* SOCIAL BUTTON HOVER */
+.social-btn {
+    transition: transform 0.3s ease,
+                background 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.social-btn:hover {
+    transform: translateY(-5px);
+    background: rgba(212, 175, 55, 0.12);
+    border-color: #d4af37;
+    color: #f5df91;
+}
+
+/* GOLD SHIMMER */
+.primary-btn {
+    position: relative;
+    overflow: hidden;
+}
+
+.primary-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -120%;
+    width: 70%;
+    height: 100%;
+    background: linear-gradient(
+        110deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    transform: skewX(-20deg);
+    transition: left 0.6s ease;
+}
+
+.primary-btn:hover::before {
+    left: 150%;
+}
+
+/* ACCESSIBILITY */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation: none !important;
+        transition: none !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/* TOUCHSCREEN SUPPORT */
+@media (hover: none) {
+    .hobby-card:hover,
+    .skill-card:hover,
+    .project-card:hover,
+    .profile-card:hover {
+        transform: none;
     }
 }
